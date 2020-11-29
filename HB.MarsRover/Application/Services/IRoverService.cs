@@ -8,5 +8,6 @@ namespace HB.MarsRover.Application.Services
         void InitilazeInputsAndCalculate();
         void CalculateMovements(Plateau plateau);
         Position GetPositionByInputString(string positionInput);
+        void DisplayOutputs(Plateau plateau);
     }
 }

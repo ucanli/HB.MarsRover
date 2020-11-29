@@ -49,6 +49,10 @@ namespace HB.MarsRover.Test
                 var rover = plateau.Rovers[i];
                 Assert.Equal(expectedResults[i], $"{rover.Position.PositionX} {rover.Position.PositionY} {rover.Position.HeadingDirection}");
             }
+
+            var ex = Record.Exception(() => _sut.DisplayOutputs(plateau));
+            Assert.Null(ex);
+
         }
     }
 }

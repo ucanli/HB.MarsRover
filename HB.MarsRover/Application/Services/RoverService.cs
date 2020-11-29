@@ -166,7 +166,7 @@ namespace HB.MarsRover.Application.Services
         /// To display outputs in console
         /// </summary>
         /// <param name="plateau"></param>
-        private void DisplayOutputs(Plateau plateau)
+        public void DisplayOutputs(Plateau plateau)
         {
 
             Output.WriteLine(ConsoleColor.Green, UserFirendlyMessages.OUTPUTS);
